@@ -6,7 +6,8 @@ public class GenerateSnowdrop : MonoBehaviour
 {
     [SerializeField]
     GameObject snowdropPrefab;
-
+    [SerializeField]
+    float offsetX;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class GenerateSnowdrop : MonoBehaviour
             Debug.LogError("[ERROR] SnowdropPrefab is not valid in " + gameObject);
             return;
         }
-        Instantiate(snowdropPrefab);
+        Instantiate(snowdropPrefab, transform.position + Random.Range(-offsetX, offsetX) * Vector3.right, transform.rotation);
     }
     // Update is called once per frame
     void Update()
