@@ -1320,6 +1320,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   snowdropPrefab: {fileID: 6712289446273437767, guid: d15bc4fdd185b411f81cfa4d5ac38279, type: 3}
   offsetX: 3
+--- !u!1001 &1691238907
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1096490122070781145, guid: d15bc4fdd185b411f81cfa4d5ac38279, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.01581
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096490122070781145, guid: d15bc4fdd185b411f81cfa4d5ac38279, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8171468
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096490122070781145, guid: d15bc4fdd185b411f81cfa4d5ac38279, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096490122070781145, guid: d15bc4fdd185b411f81cfa4d5ac38279, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096490122070781145, guid: d15bc4fdd185b411f81cfa4d5ac38279, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096490122070781145, guid: d15bc4fdd185b411f81cfa4d5ac38279, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096490122070781145, guid: d15bc4fdd185b411f81cfa4d5ac38279, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096490122070781145, guid: d15bc4fdd185b411f81cfa4d5ac38279, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096490122070781145, guid: d15bc4fdd185b411f81cfa4d5ac38279, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096490122070781145, guid: d15bc4fdd185b411f81cfa4d5ac38279, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712289446273437767, guid: d15bc4fdd185b411f81cfa4d5ac38279, type: 3}
+      propertyPath: m_Name
+      value: snowdrop
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d15bc4fdd185b411f81cfa4d5ac38279, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1329,3 +1386,4 @@ SceneRoots:
   - {fileID: 624094606}
   - {fileID: 10235067}
   - {fileID: 1013140367}
+  - {fileID: 1691238907}
