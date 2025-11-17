@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class BasketFront : MonoBehaviour
 {
+    private float timer = 0f;
     void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log(collision.tag);
@@ -12,8 +13,7 @@ public class BasketFront : MonoBehaviour
         {
             return;
         }
-        Show(0.5f);
-        Invoke("Hide", 2f);
+        timer = 2f;
     }
     void Show(float opacity)
     {
@@ -23,18 +23,17 @@ public class BasketFront : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().DOColor(new Color(1f, 1f, 1f, 1f), 0.5f);
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
-        if(GameMannager.Instance.isGameEnd)
+        
+        if(GameMannager.Instance.isGameEnd || timer >= 0f)
         {
             Show(0.3f);
+            timer -= Time.deltaTime;
+        } else
+        {
+            Hide();
         }
     }
 }

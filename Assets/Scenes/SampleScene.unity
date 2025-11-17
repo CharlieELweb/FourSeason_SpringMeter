@@ -1300,7 +1300,7 @@ Transform:
   m_GameObject: {fileID: 1013140366}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.78, z: 0.028859684}
+  m_LocalPosition: {x: 0, y: 5.93, z: 0.028859684}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1319,7 +1319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snowdropPrefab: {fileID: 6712289446273437767, guid: d15bc4fdd185b411f81cfa4d5ac38279, type: 3}
-  offsetX: 3
+  offsetX: 2.5
 --- !u!1 &1891785241
 GameObject:
   m_ObjectHideFlags: 0
