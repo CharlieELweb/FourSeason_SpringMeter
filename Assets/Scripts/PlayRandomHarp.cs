@@ -14,6 +14,11 @@ public class PlayRandomHarp : MonoBehaviour
     }
     void Start()
     {
+        PlayHarp();
+    }
+
+    public void PlayHarp()
+    {
         if(harpSound.Length == 0)
         {
             Debug.LogWarning("[WARNING] harpSound[] is empty in " + gameObject);

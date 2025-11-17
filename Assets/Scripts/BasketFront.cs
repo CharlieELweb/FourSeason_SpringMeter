@@ -12,10 +12,14 @@ public class BasketFront : MonoBehaviour
         {
             return;
         }
-        GetComponent<SpriteRenderer>().DOColor(new Color(0.5f, 0.5f, 0.5f, 0.5f), 0.5f);
-        Invoke("hide", 2f);
+        Show(0.5f);
+        Invoke("Hide", 2f);
     }
-    void hide()
+    void Show(float opacity)
+    {
+        GetComponent<SpriteRenderer>().DOColor(new Color(0.5f, 0.5f, 0.5f, opacity), 0.5f);
+    }
+    void Hide()
     {
         GetComponent<SpriteRenderer>().DOColor(new Color(1f, 1f, 1f, 1f), 0.5f);
     }
@@ -28,6 +32,9 @@ public class BasketFront : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(GameMannager.Instance.isGameEnd)
+        {
+            Show(0.3f);
+        }
     }
 }
